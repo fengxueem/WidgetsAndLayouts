@@ -15,10 +15,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".SecondPage">
 
         </activity>
+
         <activity android:name=".ThirdPage">
+
+        </activity>
+
+        <activity android:name=".FourthPage">
 
         </activity>
     </application>

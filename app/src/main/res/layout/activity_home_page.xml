@@ -52,4 +52,12 @@
         android:layout_marginTop="2dp"
         android:text="RelativeLayout"
         android:gravity="center"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_goto4"
+        android:background="#B3E5FC"
+        android:layout_marginTop="2dp"
+        android:text="FrameLayout"
+        android:gravity="center"/>
 </LinearLayout>
