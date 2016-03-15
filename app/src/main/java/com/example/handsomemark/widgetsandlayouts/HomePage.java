@@ -1,8 +1,10 @@
 package com.example.handsomemark.widgetsandlayouts;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.media.Image;
+import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,6 +19,8 @@ public class HomePage extends AppCompatActivity {
     private Button b,bt2,bt3,bt4,bt5,bt6;
     private EditText et;
     private ImageView iv;
+    private Vibrator vibe;
+    private static final int vibeTime = 30;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +35,7 @@ public class HomePage extends AppCompatActivity {
         bt6 = (Button) findViewById(R.id.button_goto6);
         et = (EditText) findViewById(R.id.text_edit);
         iv = (ImageView) findViewById(R.id.image_view);
+        vibe = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,6 +46,7 @@ public class HomePage extends AppCompatActivity {
                 p.show();
                 iv.setImageResource(R.drawable.selfiee);
                 et.setText("自拍");
+                vibe.vibrate(vibeTime);
             }
         });
         bt2.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +54,7 @@ public class HomePage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(HomePage.this,SecondPage.class);
                 startActivity(i);
+                vibe.vibrate(vibeTime);
             }
         });
         bt3.setOnClickListener(new View.OnClickListener() {
@@ -55,6 +62,7 @@ public class HomePage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(HomePage.this,ThirdPage.class);
                 startActivity(i);
+                vibe.vibrate(vibeTime);
             }
         });
         bt4.setOnClickListener(new View.OnClickListener() {
@@ -62,6 +70,7 @@ public class HomePage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(HomePage.this,FourthPage.class);
                 startActivity(i);
+                vibe.vibrate(vibeTime);
             }
         });
         bt5.setOnClickListener(new View.OnClickListener() {
@@ -69,6 +78,7 @@ public class HomePage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(HomePage.this,FifthPage.class);
                 startActivity(i);
+                vibe.vibrate(vibeTime);
             }
         });
         bt6.setOnClickListener(new View.OnClickListener() {
@@ -76,6 +86,7 @@ public class HomePage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(HomePage.this,SixPage.class);
                 startActivity(i);
+                vibe.vibrate(vibeTime);
             }
         });
     }
