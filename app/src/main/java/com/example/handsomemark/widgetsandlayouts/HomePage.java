@@ -14,7 +14,7 @@ import android.widget.ProgressBar;
 
 public class HomePage extends AppCompatActivity {
 
-    private Button b,bt2,bt3,bt4;
+    private Button b,bt2,bt3,bt4,bt5;
     private EditText et;
     private ImageView iv;
 
@@ -27,6 +27,7 @@ public class HomePage extends AppCompatActivity {
         bt2 = (Button) findViewById(R.id.button_goto2);
         bt3 = (Button) findViewById(R.id.button_goto3);
         bt4 = (Button) findViewById(R.id.button_goto4);
+        bt5 = (Button) findViewById(R.id.button_goto5);
         et = (EditText) findViewById(R.id.text_edit);
         iv = (ImageView) findViewById(R.id.image_view);
         b.setOnClickListener(new View.OnClickListener() {
@@ -59,6 +60,13 @@ public class HomePage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(HomePage.this,FourthPage.class);
+                startActivity(i);
+            }
+        });
+        bt5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(HomePage.this,FifthPage.class);
                 startActivity(i);
             }
         });

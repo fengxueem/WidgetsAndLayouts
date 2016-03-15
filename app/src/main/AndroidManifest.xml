@@ -27,6 +27,11 @@
         <activity android:name=".FourthPage">
 
         </activity>
+
+        <activity android:name=".FifthPage">
+
+        </activity>
+
     </application>
 
 </manifest>
