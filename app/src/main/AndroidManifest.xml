@@ -18,6 +18,9 @@
         <activity android:name=".SecondPage">
 
         </activity>
+        <activity android:name=".ThirdPage">
+
+        </activity>
     </application>
 
 </manifest>

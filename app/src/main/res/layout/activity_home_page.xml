@@ -38,10 +38,18 @@
         android:src="@drawable/android"
         android:scaleType="fitCenter"/>
     <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/button_goto2"
+    android:background="#B3E5FC"
+    android:text="LinearLayout"
+    android:gravity="center"/>
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button_goto2"
+        android:id="@+id/button_goto3"
         android:background="#B3E5FC"
-        android:text="LinearLayout"
+        android:layout_marginTop="2dp"
+        android:text="RelativeLayout"
         android:gravity="center"/>
 </LinearLayout>
