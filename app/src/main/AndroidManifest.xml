@@ -32,6 +32,9 @@
 
         </activity>
 
+        <activity android:name=".SixPage">
+
+        </activity>
     </application>
 
 </manifest>

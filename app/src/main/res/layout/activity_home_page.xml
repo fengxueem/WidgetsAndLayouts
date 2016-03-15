@@ -68,4 +68,12 @@
         android:layout_marginTop="2dp"
         android:text="TableLayout"
         android:gravity="center"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_goto6"
+        android:background="#B3E5FC"
+        android:layout_marginTop="2dp"
+        android:text="CustomizedLayout"
+        android:gravity="center"/>
 </LinearLayout>
